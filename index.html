@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Spam Email Detection</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin: 50px;
+      }
+
+      textarea {
+        width: 400px;
+        height: 120px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Spam Email Detection</h1>
+
+    <form method="POST">
+      <textarea
+        name="message"
+        placeholder="Enter Email or Message"
+        required
+      ></textarea>
+
+      <br />
+
+      <button type="submit">Check</button>
+    </form>
+
+    <h2>{{ result }}</h2>
+  </body>
+</html>
